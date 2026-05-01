@@ -137,19 +137,27 @@ nav.scrolled {
     radial-gradient(ellipse 40% 40% at 80% 70%, rgba(40,35,28,0.8) 0%, transparent 60%);
 }
 
+/* BARCODE — full-width immersive watermark */
 .hero-barcode {
   position: absolute;
+  left: 0;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 320px;
-  opacity: 0.04;
-  filter: blur(0.5px);
-  animation: barcode-breathe 8s ease-in-out infinite;
+  transform: translateY(-46%);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0.055;
+  mix-blend-mode: screen;
+  filter: blur(0.4px);
+  pointer-events: none;
+  animation: barcode-breathe 9s ease-in-out infinite;
+  /* mask: fade to transparent on edges so it blends cleanly */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
 }
 @keyframes barcode-breathe {
-  0%, 100% { opacity: 0.04; transform: translate(-50%,-50%) scale(1); }
-  50% { opacity: 0.07; transform: translate(-50%,-50%) scale(1.03); }
+  0%, 100% { opacity: 0.055; transform: translateY(-46%) scaleX(1); }
+  50% { opacity: 0.085; transform: translateY(-46%) scaleX(1.01); }
 }
 
 .hero-eyebrow {
