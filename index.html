@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>eizodesign</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">eizodesign</a>
+  <ul class="nav-links">
+    <li><a href="#portfolio">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div id="hero" class="hero" style="min-height:100vh; max-width:100%; margin:0; padding:120px 40px 80px;">
+  <div class="hero-bg"></div>
+
+  <svg class="hero-barcode" viewBox="0 0 580 200" xmlns="http://www.w3.org/2000/svg">
+    <rect x="30" y="20" width="4" height="160" fill="white"/>
+    <rect x="42" y="20" width="2" height="160" fill="white"/>
+    <rect x="52" y="20" width="8" height="160" fill="white"/>
+    <rect x="68" y="20" width="3" height="160" fill="white"/>
+    <rect x="80" y="20" width="6" height="160" fill="white"/>
+    <rect x="100" y="20" width="12" height="160" fill="white"/>
+    <rect x="120" y="20" width="4" height="160" fill="white"/>
+    <rect x="130" y="20" width="8" height="160" fill="white"/>
+    <rect x="148" y="20" width="3" height="160" fill="white"/>
+    <rect x="160" y="20" width="18" height="160" fill="white"/>
+    <rect x="188" y="20" width="5" height="160" fill="white"/>
+    <rect x="200" y="20" width="10" height="160" fill="white"/>
+    <rect x="218" y="20" width="4" height="160" fill="white"/>
+    <rect x="232" y="20" width="7" height="160" fill="white"/>
+    <rect x="248" y="20" width="14" height="160" fill="white"/>
+    <rect x="272" y="20" width="3" height="160" fill="white"/>
+    <rect x="282" y="20" width="9" height="160" fill="white"/>
+    <rect x="300" y="20" width="5" height="160" fill="white"/>
+    <rect x="315" y="20" width="11" height="160" fill="white"/>
+    <rect x="334" y="20" width="4" height="160" fill="white"/>
+    <rect x="348" y="20" width="16" height="160" fill="white"/>
+    <rect x="374" y="20" width="6" height="160" fill="white"/>
+    <rect x="388" y="20" width="3" height="160" fill="white"/>
+    <rect x="400" y="20" width="9" height="160" fill="white"/>
+    <rect x="418" y="20" width="5" height="160" fill="white"/>
+    <rect x="432" y="20" width="12" height="160" fill="white"/>
+    <rect x="454" y="20" width="4" height="160" fill="white"/>
+    <rect x="466" y="20" width="7" height="160" fill="white"/>
+    <rect x="482" y="20" width="3" height="160" fill="white"/>
+    <rect x="494" y="20" width="10" height="160" fill="white"/>
+    <rect x="513" y="20" width="5" height="160" fill="white"/>
+    <rect x="527" y="20" width="8" height="160" fill="white"/>
+    <rect x="544" y="20" width="4" height="160" fill="white"/>
+  </svg>
+
+  <p class="hero-eyebrow">Video Editor · Content Creator Partner</p>
+  <h1 class="hero-title">
+    eizo<em>design</em>
+  </h1>
+  <p class="hero-tagline">Every frame carries a feeling. I make sure yours is never forgotten.</p>
+
+  <div class="hero-cta-group">
+    <a href="https://www.instagram.com/eizodesign" class="btn-primary" target="_blank">DM on Instagram</a>
+    <a href="https://www.youtube.com/@eizodesigns" class="btn-secondary" target="_blank">View Showreel</a>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span class="scroll-text">Scroll</span>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" style="max-width:100%; padding:120px 60px;">
+  <div class="reveal"><span class="section-label">Selected Work</span></div>
+  <h2 class="section-title reveal reveal-delay-1">Frames that<br><em>leave a mark.</em></h2>
+
+  <div class="portfolio-grid reveal reveal-delay-2">
+
+    <!-- Replace each video src with your actual file — same filename, same folder -->
+
+    <div class="portfolio-item" style="grid-column: span 2; aspect-ratio: 21/9;">
+      <div class="port-visual">
+        <video class="port-video" src="videos/cinematic-vlog-series.mp4" muted loop playsinline preload="none"></video>
+        <div class="port-bars" id="bars1"></div>
+      </div>
+      <div class="portfolio-overlay">
+        <span class="port-type">Long-Form · YouTube</span>
+        <p class="port-name">Cinematic Vlog Series</p>
+        <div class="port-arrow"><div class="port-arrow-line"></div></div>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="port-visual">
+        <video class="port-video" src="videos/brand-story-cut.mp4" muted loop playsinline preload="none"></video>
+        <div class="port-bars" id="bars2"></div>
+      </div>
+      <div class="portfolio-overlay">
+        <span class="port-type">Short-Form · Reels</span>
+        <p class="port-name">Brand Story Cut</p>
+        <div class="port-arrow"><div class="port-arrow-line"></div></div>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="port-visual">
+        <video class="port-video" src="videos/documentary-teaser.mp4" muted loop playsinline preload="none"></video>
+        <div class="port-bars" id="bars3"></div>
+      </div>
+      <div class="portfolio-overlay">
+        <span class="port-type">Cinematic · Film</span>
+        <p class="port-name">Documentary Teaser</p>
+        <div class="port-arrow"><div class="port-arrow-line"></div></div>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="port-visual">
+        <video class="port-video" src="videos/creator-growth-edit.mp4" muted loop playsinline preload="none"></video>
+        <div class="port-bars" id="bars4"></div>
+      </div>
+      <div class="portfolio-overlay">
+        <span class="port-type">Long-Form · Tutorial</span>
+        <p class="port-name">Creator Growth Edit</p>
+        <div class="port-arrow"><div class="port-arrow-line"></div></div>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="port-visual">
+        <video class="port-video" src="videos/viral-moment-pack.mp4" muted loop playsinline preload="none"></video>
+        <div class="port-bars" id="bars5"></div>
+      </div>
+      <div class="portfolio-overlay">
+        <span class="port-type">Short-Form · Shorts</span>
+        <p class="port-name">Viral Moment Pack</p>
+        <div class="port-arrow"><div class="port-arrow-line"></div></div>
+      </div>
+    </div>
+
+    <div class="portfolio-item">
+      <div class="port-visual">
+        <video class="port-video" src="videos/signature-grade-work.mp4" muted loop playsinline preload="none"></video>
+        <div class="port-bars" id="bars6"></div>
+      </div>
+      <div class="portfolio-overlay">
+        <span class="port-type">Cinematic · Color</span>
+        <p class="port-name">Signature Grade Work</p>
+        <div class="port-arrow"><div class="port-arrow-line"></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about" style="max-width:100%; padding:120px 60px;">
+  <div class="about-layout">
+    <div class="about-visual reveal">
+      <div class="about-visual-inner" id="about-bars"></div>
+      <div class="about-accent"></div>
+    </div>
+    <div class="about-content">
+      <span class="section-label reveal">About</span>
+      <h2 class="section-title reveal reveal-delay-1">The editor<br><em>behind the frame.</em></h2>
+      <p class="about-text reveal reveal-delay-2">
+        I'm a video editor obsessed with the <strong>space between cuts</strong> — the moments that make a viewer feel before they think. Based in my craft, I work with content creators to turn raw footage into <strong>stories that stop the scroll</strong>. Beyond the edit, I share everything I know to help other editors grow, because <strong>craft gets better when it's shared.</strong>
+      </p>
+      <div class="about-stats reveal reveal-delay-3">
+        <div class="stat-box">
+          <div class="stat-num">100+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">50M+</div>
+          <div class="stat-label">Views Generated</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Years of Craft</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Frames Perfected</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SERVICES -->
+<section id="services" style="max-width:100%; padding:120px 60px;">
+  <span class="section-label reveal">What I Do</span>
+  <h2 class="section-title reveal reveal-delay-1">Every service.<br><em>One obsession.</em></h2>
+
+  <div class="services-grid reveal reveal-delay-2">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <div class="service-title">Long-Form Editing</div>
+      <div class="service-desc">YouTube videos that hold attention from second one to the very last frame. Pacing, rhythm, storytelling — nothing left to chance.</div>
+      <div class="service-arrow">↗</div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <div class="service-title">Short-Form & Reels</div>
+      <div class="service-desc">Cuts built for the algorithm and the human eye. Reels, Shorts, TikToks — edited to hook, retain, and convert.</div>
+      <div class="service-arrow">↗</div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <div class="service-title">Color Grading</div>
+      <div class="service-desc">Cinematic tones that give your content a signature look. From raw to refined — every grade tells a mood.</div>
+      <div class="service-arrow">↗</div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">04</div>
+      <div class="service-title">Motion & Transitions</div>
+      <div class="service-desc">Custom motion graphics and seamless transitions that elevate your edit from good to unforgettable.</div>
+      <div class="service-arrow">↗</div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">05</div>
+      <div class="service-title">Sound Design</div>
+      <div class="service-desc">Audio mixing, SFX layering, and music sync that makes viewers feel the edit as much as see it.</div>
+      <div class="service-arrow">↗</div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">06</div>
+      <div class="service-title">Editor Mentorship</div>
+      <div class="service-desc">For editors who want to grow. Feedback, resources, and the honest knowledge it took years to earn — shared freely.</div>
+      <div class="service-arrow">↗</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PALETTE -->
+<div class="palette-section reveal" id="palette">
+  <span class="section-label">Brand Palette</span>
+  <h2 class="section-title">The colors of<br><em>eizodesign.</em></h2>
+
+  <div class="palette-grid" style="margin-top:48px;">
+    <div class="palette-swatch" style="background:#0a0a0a; color:#6b6b6b;">
+      <div class="swatch-info">
+        <div class="swatch-name" style="color:#6b6b6b;">Obsidian</div>
+        <div class="swatch-hex" style="color:#6b6b6b;">#0A0A0A</div>
+      </div>
+    </div>
+    <div class="palette-swatch" style="background:#111111; color:#6b6b6b;">
+      <div class="swatch-info">
+        <div class="swatch-name" style="color:#6b6b6b;">Charcoal</div>
+        <div class="swatch-hex" style="color:#6b6b6b;">#111111</div>
+      </div>
+    </div>
+    <div class="palette-swatch" style="background:#1a1a1a; color:#6b6b6b;">
+      <div class="swatch-info">
+        <div class="swatch-name" style="color:#6b6b6b;">Graphite</div>
+        <div class="swatch-hex" style="color:#6b6b6b;">#1A1A1A</div>
+      </div>
+    </div>
+    <div class="palette-swatch" style="background:#252525; color:#9a9a9a;">
+      <div class="swatch-info">
+        <div class="swatch-name" style="color:#9a9a9a;">Smoke</div>
+        <div class="swatch-hex" style="color:#9a9a9a;">#252525</div>
+      </div>
+    </div>
+    <div class="palette-swatch" style="background:#3a3a3a; color:#9a9a9a;">
+      <div class="swatch-info">
+        <div class="swatch-name" style="color:#9a9a9a;">Ash</div>
+        <div class="swatch-hex" style="color:#9a9a9a;">#3A3A3A</div>
+      </div>
+    </div>
+    <div class="palette-swatch" style="background:#6b6b6b; color:#e8e4dc;">
+      <div class="swatch-info">
+        <div class="swatch-name">Mist</div>
+        <div class="swatch-hex">#6B6B6B</div>
+      </div>
+    </div>
+    <div class="palette-swatch" style="background:#c8c4bc; color:#1a1a1a;">
+      <div class="swatch-info">
+        <div class="swatch-name" style="color:#1a1a1a;">Pearl</div>
+        <div class="swatch-hex" style="color:#1a1a1a;">#C8C4BC</div>
+      </div>
+    </div>
+    <div class="palette-swatch" style="background:#e8e4dc; color:#1a1a1a;">
+      <div class="swatch-info">
+        <div class="swatch-name" style="color:#1a1a1a;">Ivory</div>
+        <div class="swatch-hex" style="color:#1a1a1a;">#E8E4DC</div>
+      </div>
+    </div>
+    <div class="palette-swatch" style="background:#b8a47a; color:#1a1a1a;">
+      <div class="swatch-info">
+        <div class="swatch-name" style="color:#1a1a1a;">Gold</div>
+        <div class="swatch-hex" style="color:#1a1a1a;">#B8A47A</div>
+      </div>
+    </div>
+    <div class="palette-swatch" style="background:#d4c09a; color:#1a1a1a;">
+      <div class="swatch-info">
+        <div class="swatch-name" style="color:#1a1a1a;">Gold Light</div>
+        <div class="swatch-hex" style="color:#1a1a1a;">#D4C09A</div>
+      </div>
+    </div>
+    <div class="palette-swatch" style="background:#8a7a5a; color:#e8e4dc;">
+      <div class="swatch-info">
+        <div class="swatch-name">Gold Muted</div>
+        <div class="swatch-hex">#8A7A5A</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:40px; display:flex; gap:40px; flex-wrap:wrap;">
+    <div>
+      <div style="font-family:'Syne',sans-serif; font-size:9px; letter-spacing:0.3em; text-transform:uppercase; color:#6b6b6b; margin-bottom:12px;">Primary Typeface</div>
+      <div style="font-family:'Cormorant Garamond',serif; font-size:32px; font-weight:300; font-style:italic; color:#c8c4bc;">Cormorant Garamond</div>
+    </div>
+    <div>
+      <div style="font-family:'Syne',sans-serif; font-size:9px; letter-spacing:0.3em; text-transform:uppercase; color:#6b6b6b; margin-bottom:12px;">Secondary Typeface</div>
+      <div style="font-family:'Syne',sans-serif; font-size:22px; font-weight:400; letter-spacing:0.1em; color:#9a9a9a;">SYNE</div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact" style="max-width:100%; padding:120px 60px;">
+  <span class="section-label reveal">Get in Touch</span>
+  <div class="contact-inner">
+    <div>
+      <h2 class="section-title reveal">Let's make<br><em>something real.</em></h2>
+      <p class="contact-copy reveal reveal-delay-1">Whether you're a creator ready to level up your content or an editor looking to grow — I'd love to hear from you. Every great edit starts with a conversation.</p>
+    </div>
+    <div class="contact-links reveal reveal-delay-2">
+      <a href="https://www.instagram.com/eizodesign" class="contact-link-item" target="_blank">
+        <div>
+          <div class="contact-link-label">Instagram</div>
+          <div class="contact-link-value">@eizodesign</div>
+        </div>
+        <div class="contact-link-arrow">↗</div>
+      </a>
+      <a href="https://www.youtube.com/@eizodesigns" class="contact-link-item" target="_blank">
+        <div>
+          <div class="contact-link-label">YouTube</div>
+          <div class="contact-link-value">@eizodesigns</div>
+        </div>
+        <div class="contact-link-arrow">↗</div>
+      </a>
+      <a href="https://www.instagram.com/eizodesign" class="contact-link-item" target="_blank">
+        <div>
+          <div class="contact-link-label">Book a Project</div>
+          <div class="contact-link-value">DM to Collaborate</div>
+        </div>
+        <div class="contact-link-arrow">↗</div>
+      </a>
+      <a href="https://www.youtube.com/@eizodesigns" class="contact-link-item" target="_blank">
+        <div>
+          <div class="contact-link-label">Editor Community</div>
+          <div class="contact-link-value">Watch & Learn</div>
+        </div>
+        <div class="contact-link-arrow">↗</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#hero" class="footer-logo">eizodesign</a>
+  <span class="footer-copy">© 2026 eizodesign — All frames reserved.</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
