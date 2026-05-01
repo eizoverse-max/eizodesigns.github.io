@@ -758,3 +758,202 @@ footer {
 .reveal-delay-1 { transition-delay: 0.15s; }
 .reveal-delay-2 { transition-delay: 0.3s; }
 .reveal-delay-3 { transition-delay: 0.45s; }
+
+/* ─── FLOATING SOCIAL SIDEBAR ─────────────────────────────── */
+.social-sidebar {
+  position: fixed;
+  left: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ash);
+  text-decoration: none;
+  padding: 14px 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  cursor: none;
+  overflow: hidden;
+}
+.social-btn:hover {
+  color: var(--gold);
+  transform: translateX(3px);
+}
+.social-label {
+  font-family: var(--sans);
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+  position: absolute;
+  left: 38px;
+  pointer-events: none;
+  color: var(--gold);
+}
+.social-btn:hover .social-label {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.social-divider {
+  width: 1px;
+  height: 20px;
+  background: var(--ash);
+  opacity: 0.3;
+}
+
+/* ─── SHOP SECTION ────────────────────────────────────────── */
+.shop-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  margin-top: 56px;
+}
+
+.shop-card {
+  position: relative;
+  padding: 0;
+  text-decoration: none;
+  overflow: hidden;
+  display: block;
+  background: var(--charcoal);
+  transition: transform 0.4s ease;
+  cursor: none;
+}
+.shop-card:hover { transform: translateY(-4px); }
+
+.shop-card-bg {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.shop-gumroad .shop-card-bg {
+  background: radial-gradient(ellipse at top left, rgba(255,144,104,0.08) 0%, transparent 70%);
+}
+.shop-patreon .shop-card-bg {
+  background: radial-gradient(ellipse at top left, rgba(255,66,77,0.06) 0%, transparent 70%);
+}
+.shop-card:hover .shop-card-bg { opacity: 1; }
+
+.shop-card-inner {
+  position: relative;
+  z-index: 1;
+  padding: 48px 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 100%;
+  border-top: 1px solid transparent;
+  transition: border-color 0.4s ease;
+}
+.shop-gumroad:hover .shop-card-inner { border-top-color: rgba(255,144,104,0.3); }
+.shop-patreon:hover .shop-card-inner { border-top-color: rgba(255,66,77,0.25); }
+
+.shop-platform-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--mist);
+  padding: 8px 14px;
+  border: 1px solid var(--ash);
+  width: fit-content;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+.shop-gumroad:hover .shop-platform-badge { color: rgba(255,144,104,0.9); border-color: rgba(255,144,104,0.3); }
+.shop-patreon:hover .shop-platform-badge { color: rgba(255,80,90,0.9); border-color: rgba(255,80,90,0.3); }
+
+.shop-card-title {
+  font-family: var(--serif);
+  font-size: 34px;
+  font-weight: 300;
+  color: var(--ivory);
+  line-height: 1.1;
+  transition: color 0.3s ease;
+}
+.shop-gumroad:hover .shop-card-title { color: var(--cream); }
+.shop-patreon:hover .shop-card-title { color: var(--cream); }
+
+.shop-card-desc {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--mist);
+  line-height: 1.8;
+  max-width: 360px;
+}
+
+.shop-card-items {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+.shop-card-items span {
+  font-family: var(--sans);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ash);
+  padding: 5px 10px;
+  border: 1px solid var(--ash);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+.shop-card:hover .shop-card-items span { opacity: 1; }
+
+.shop-card-cta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--silver);
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid var(--ash);
+  transition: color 0.3s ease, gap 0.3s ease;
+}
+.shop-card:hover .shop-card-cta { gap: 16px; }
+.shop-gumroad:hover .shop-card-cta { color: rgba(255,144,104,0.9); }
+.shop-patreon:hover .shop-card-cta { color: rgba(255,80,90,0.85); }
+
+/* ─── FOOTER SOCIALS ──────────────────────────────────────── */
+footer {
+  justify-content: space-between;
+}
+.footer-socials {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.footer-social-link {
+  color: var(--ash);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  cursor: none;
+}
+.footer-social-link:hover {
+  color: var(--gold);
+  transform: translateY(-2px);
+}
